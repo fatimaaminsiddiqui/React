@@ -4,6 +4,13 @@ import React from 'react'
 // return <h1>Hello Fatima</h1>
 //}
 
- const Greet = () => <h1>Hello Fatima</h1>
+ const Greet = props => {
+  const {name, heroName} = props
+  return (
+    <div>
+      <h1>Hello {name} the {heroName}</h1>
+    </div>
+  )
+ }
 
 export default Greet 
